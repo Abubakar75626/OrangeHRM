@@ -1,0 +1,13 @@
+tests\PIM.class
+framework\Data$Common.class
+framework\Validators$Cases.class
+framework\Driver.class
+framework\Validators.class
+framework\Events.class
+framework\Pages.class
+framework\Reporter.class
+framework\Reporter$1.class
+framework\Common.class
+framework\UtilityMethods.class
+framework\Configuration.class
+framework\Data.class

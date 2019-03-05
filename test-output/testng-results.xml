@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48308" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:50:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48308" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:50:16Z">
+      <class name="tests.PIM">
+        <test-method status="PASS" signature="beforeSuit(java.lang.String)[pri:0, instance:tests.PIM@543c6f6d]" name="beforeSuit" is-config="true" duration-ms="73" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:49:28Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method status="PASS" signature="initiateReport(org.testng.ITestContext)[pri:0, instance:tests.PIM@543c6f6d]" name="initiateReport" is-config="true" duration-ms="218" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:49:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2024293c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateReport -->
+        <test-method status="PASS" signature="closeBrowsers()[pri:0, instance:tests.PIM@543c6f6d]" name="closeBrowsers" is-config="true" duration-ms="16" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:49:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowsers -->
+        <test-method status="PASS" signature="createEmployee(java.lang.String)[pri:0, instance:tests.PIM@543c6f6d]" name="createEmployee" duration-ms="47637" started-at="2019-03-04T17:49:28Z" finished-at="2019-03-04T17:50:16Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:tests.PIM@543c6f6d]" name="afterTest" is-config="true" duration-ms="413" started-at="2019-03-04T17:50:16Z" finished-at="2019-03-04T17:50:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2024293c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.PIM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,9 @@
+<ObjectInfo>
+	<Common>
+		<AfterLaunch locator="xpath" value="//div[text()='LOGIN Panel']"/>
+		<UserName  locator="id" value="txtUsername"/>
+		<Password  locator="id" value="txtPassword"/>
+		<LoginButton locator="id" value="btnLogin"/>
+		<AfterLogin  locator="xpath" value="//a[contains(text(),'Welcome')]"/>
+	</Common>
+</ObjectInfo>
