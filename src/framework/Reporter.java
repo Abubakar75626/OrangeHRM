@@ -127,7 +127,7 @@ public class Reporter extends Configuration {
 		String timeStamp=new SimpleDateFormat("MM.dd_HH.mm.ss:SSS").format(new Date());
 		File screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.FILE);
 		
-		String newFilePath = screenShotDir+legalNamelocator + "_"+ timeStamp + "_" + Data.Common.curTestName+ ".png";
+		String newFilePath = legalNamelocator + "_"+ timeStamp + "_" + Data.Common.curTestName+ ".png";
 		File newFileName = new File(newFilePath);
 
 		try {
@@ -241,7 +241,7 @@ public class Reporter extends Configuration {
 	public void setlog4jPropertyFile(ITestContext ctx) throws IOException {
 
 		Data.Common.log4j = Logger.getLogger(ctx.getClass());
-		String log4JPropertyFile = "Config\\log4j.properties";
+		String log4JPropertyFile = Data.Configure.LOG4J_PROPERTIES;
 		Properties p = new Properties();
 
 		try {

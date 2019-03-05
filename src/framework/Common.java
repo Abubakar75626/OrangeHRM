@@ -40,7 +40,7 @@ public class Common {
 
 		switch (browser.toLowerCase()) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",Data.Configure.CHROME_DRIVER_PATH);
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--ignore-certificate-errors", "--disable-extensions", "--dns-prefetch-disable",
 					"lang=en_US.UTF-8", "--disable-infobars", "--new-window", "--start-maximized");
@@ -49,12 +49,9 @@ public class Common {
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
 			chromeOptions.setExperimentalOption("prefs", prefs);
-			// chromeOptions.addArguments("--app="+ url);
-			// Data.Common.driver = new ChromeDriver(chromeOptions);
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			Driver.set(new ChromeDriver(chromeOptions));
@@ -74,10 +71,9 @@ public class Common {
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", Data.Configure.FIREFOX_DRIVER_PATH);
 			FirefoxOptions opts = new FirefoxOptions().setLogLevel(FirefoxDriverLogLevel.TRACE);
 			Driver.set(new FirefoxDriver(opts));
 			Driver.get().get(url);
@@ -210,6 +206,5 @@ public class Common {
 		Writer writer = new OutputStreamWriter(outputStream);
 		writer.write(fileContent);
 		writer.close();
-
 	}
 }

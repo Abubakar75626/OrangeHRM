@@ -26,10 +26,10 @@ public class Configuration {
 	@BeforeSuite
 	public void beforeSuit(@Optional String environment) {
 		this.getEnvDetails(environment);
-		UtilityMethods.loadRepository("Object Repositories\\Repository.xml");
+		UtilityMethods.loadRepository(Data.Configure.REPOSITORY_PROPERTIES);
 
 	}
-   
+	
 	public void getEnvDetails(@Optional String environment) {
 
 		environment = (environment == null) ? "qa" : environment;
@@ -37,11 +37,11 @@ public class Configuration {
 
 		switch (environment.toLowerCase()) {
 		case "qa":
-			Data.Common.envConfigData = UtilityMethods.readPropertiesToMap("Config\\env_qa.properties");
+			Data.Common.envConfigData = UtilityMethods.readPropertiesToMap(Data.Configure.PROPERTY_FILE_QA);
 			break;
 
 		case "dev":
-			Data.Common.envConfigData = UtilityMethods.readPropertiesToMap("Config\\env_dev.properties");
+			Data.Common.envConfigData = UtilityMethods.readPropertiesToMap(Data.Configure.PROPERTY_FILE_DEV);
 			break;
 
 		default:
@@ -49,7 +49,7 @@ public class Configuration {
 			break;
 		}
 
-		Data.Common.executionConfigData = UtilityMethods.readPropertiesToMap("Config\\execution_config.properties");
+		Data.Common.executionConfigData = UtilityMethods.readPropertiesToMap(Data.Configure.PROPERTY_FILE_EXECUTION_CONFIG);
 
 	}
 //*************************************************************************************************************************

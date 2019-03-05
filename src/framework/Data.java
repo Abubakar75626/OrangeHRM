@@ -40,4 +40,20 @@ public class Data {
 		public static String curTestName;
 		
 	}
+	
+	public static class Configure{
+		
+		public static final String PROPERTY_FILE_QA="Config\\env_qa.properties";
+		public static final String PROPERTY_FILE_DEV="Config\\env_dev.properties";
+		public static final String PROPERTY_FILE_EXECUTION_CONFIG="Config\\execution_config.properties";
+		
+		public static final String LOG4J_PROPERTIES="Config\\log4j.properties";
+		public static final String REPOSITORY_PROPERTIES="Object Repositories\\Repository.xml";
+		
+		public static final String CHROME_DRIVER_PATH="Drivers\\chromedriver.exe";
+		public static final String FIREFOX_DRIVER_PATH="Drivers\\geckodriver.exe";
+		public static final String IE_DRIVER_PATH="Drivers\\IEDriverServer.exe";
+		public static final String EDGE_DRIVER_PATH="Drivers\\MicrosoftWebDriver.exe";
+		
+	}
 }
